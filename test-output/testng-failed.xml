@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.samplapp.utility.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Smoke(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.konakartregistration.testcases.UseraddtoCart">
+        <methods>
+          <include name="setup"/>
+          <include name="ProductSelection"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.konakartregistration.testcases.UseraddtoCart -->
+      <class name="com.konakartregistration.testcases.HomepageTest">
+        <methods>
+          <include name="productSearch"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.konakartregistration.testcases.HomepageTest -->
+      <class name="com.konakartregistration.testcases.Paymentcheckout">
+        <methods>
+          <include name="ProductSelection"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.konakartregistration.testcases.Paymentcheckout -->
+      <class name="com.konakartregistration.testcases.Userlogintest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Userone"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.konakartregistration.testcases.Userlogintest -->
+    </classes>
+  </test> <!-- Smoke(failed) -->
+</suite> <!-- Failed suite [Suite] -->
